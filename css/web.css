@@ -1,0 +1,262 @@
+:root {
+  --warnastd: #3ba3d3;
+  --bg: #010101;
+  --box: #114e58;
+  --clr: #9c0808;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  color: #fff;
+  background-color: var(--bg);
+}
+
+.aboute {
+  padding: 10rem 7% 8rem;
+  transition: 0.3s;
+  background-image: url(../img/produkbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.aboute h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 8rem;
+}
+
+.aboute h2 span {
+  color: var(--warnastd);
+  margin-right: 20px;
+}
+
+.aboute h1 {
+  text-align: center;
+  font-size: 4.6rem;
+  margin: 9rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #285151;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-bar {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #9c0808;
+}
+
+.navbar .navbar-bar span {
+  color: white;
+}
+
+.navbar .navbar-nav a {
+  color: wheat;
+  margin: 0 1rem;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #9c0808;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #9c0808;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-con a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-con a:hover {
+  color: var(--warnastd);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/download-_3_.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -100px;
+}
+
+#menu-toko {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  background-image: url(../img/download-_3_.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+.product {
+  background-color: var(--box);
+  border: 1px solid var(--box);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-group button {
+  background-color: #ebfd44;
+  color: #020000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 48%;
+}
+
+.button-group button:hover {
+  background-color: var(--warnastd);
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+/* media query */
+
+/*laptop */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu-toko {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #333030;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.aktif {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

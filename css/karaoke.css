@@ -1,0 +1,211 @@
+body {
+  background-image: url("../img/download-_3_.png");
+  background-size: cover;
+}
+
+.bau {
+  position: absolute; /* Ensure the element can be positioned absolutely */
+  color: #fff; /* Set text color to white */
+  top: 0; /* Position at the top */
+  right: 0; /* Position at the right */
+  padding: 20px; /* Optional: Add some padding for better spacing */
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  color: white;
+  font-family: "PT Serif", serif;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: -70px;
+}
+
+/* web.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Serif", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.banyak {
+  font-size: 22px;
+  color: #e6e5e5;
+}
+
+.banyak span {
+  color: #fff;
+}
+
+/* karaoke.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #285151;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar .navbar-bar span {
+  color: white;
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  margin: 0 1rem;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #9c0808;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.song-list {
+  margin-top: 80px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: transparent;
+}
+
+.song-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.song-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.song-list li:last-child {
+  border-bottom: none;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #d4d4d4;
+}
+
+.play-button {
+  background-color: #9c0808;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-button:hover {
+  background-color: #9c0808;
+}
+
+.artist-image {
+  max-width: 100px; /* Adjust the maximum width as needed */
+  height: auto;
+  vertical-align: middle;
+  border-radius: 50%; /* Optional: to make the image circular */
+  margin-right: 10px; /* Optional: add margin for spacing */
+}
+
+@media screen and (max-width: 600px) {
+  .artist-image {
+    max-width: 40px; /* Reduce the size on smaller screens */
+  }
+}
+
+.whatsapp-request {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #128c7e;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.whatsapp-button i {
+  margin-right: 0px;
+  text-align: center;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+
+/* boxmenu.css */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #33333300;
+  color: #fff;
+  position: static;
+  width: 100%;
+  background: transparent;
+  margin-top: 100px;
+}

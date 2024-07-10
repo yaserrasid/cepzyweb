@@ -1,0 +1,85 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Welcome Section Styles */
+.welcome {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  margin-top: 70px;
+  font-size: 40px;
+  color: #9c0808;
+}
+
+p {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  margin-top: 20px;
+  font-size: 15px;
+  text-shadow: 100px;
+}
+
+/* Karaoke Styles */
+#karaoke {
+  color: #fff;
+}
+
+#karaoke:hover {
+  color: #c21c1c;
+}
+
+#comingsoon {
+  color: #fff;
+}
+
+#comingsoon:hover {
+  color: #c21c1c;
+}
+
+/* Menu Container Styles */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust gap between menu boxes as needed */
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Menu Box Styles */
+/* .menu-box { */
+  /* background-color: #fff; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* width: 100px; Smaller width */
+  /* padding: 5px; Smaller padding */
+  /* text-align: center; */
+  /* background: transparent; */
+/* } */
+
+/* Menu Logo Styles */
+.menu-logo {
+  width: 80px; /* Adjusted logo size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

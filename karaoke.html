@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cepzt web</title>
+    <link rel="stylesheet" href="css/web.css" />
+    <link rel="stylesheet" href="css/karaoke.css" />
+    <link rel="stylesheet" href="css/boxmenu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .artist-image {
+        max-width: 100px; /* Adjust the maximum width as needed */
+        height: auto;
+        vertical-align: middle;
+        border-radius: 50%; /* Optional: to make the image circular */
+        margin: 10px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .artist-image {
+          max-width: 40px; /* Reduce the size on smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="bau">Back</a>
+      <a href="#" class="navbar-bar">Cep<span>zy</span></a>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="karaoke.html">List Lagu</a>
+        <a href="#">Coming soon</a>
+        <a href="https://yaserrasid.github.io/yaserrasid/">Kontak</a>
+      </div>
+      <div class="navbar-con">
+        <!-- <a href="#" id="cari"><i data-feather="search"></i></a> -->
+        <a href="#" id="menu-toko"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <main>
+      <h1 class="banyak">Daftar Lagu</h1>
+      <section class="song-list">
+        <ul>
+          <li>
+            <div class="song-info">
+              <span class="song-artist">
+                <img
+                  src="imgsong/3335be3d-5c07-4b30-8c63-6d5c11663c22.png"
+                  alt="Dudy Oris"
+                  class="artist-image"
+                />
+                MAHALINI
+              </span>
+              <span class="song-title">Bawa Dia Kembali</span>
+            </div>
+            <button
+              class="play-button"
+              onclick="togglePlayPause('song1', this)"
+            >
+              Play
+            </button>
+            <audio id="song1" src="music/auh.mp3"></audio>
+          </li>
+          <li>
+            <div class="song-info">
+              <span class="song-artist">
+                <img
+                  src="imgsong/Lirik-Bahagia-Tanpa-Kamu-Dudy-Oris.png"
+                  alt="Dudy Oris"
+                  class="artist-image"
+                />
+                DUDY ORIS
+              </span>
+              <span class="song-title">Aku Yang Jatuh Cinta</span>
+            </div>
+            <button
+              class="play-button"
+              onclick="togglePlayPause('song2', this)"
+            >
+              Play
+            </button>
+            <audio id="song2" src="music/dudy oris.mp3"></audio>
+          </li>
+          <li>
+            <div class="song-info">
+              <span class="song-artist">
+                <img
+                  src="imgsong/download-_4_.png"
+                  alt="Dudy Oris"
+                  class="artist-image"
+                />
+                JAZ
+              </span>
+              <span class="song-title">Bersamamu</span>
+            </div>
+            <button
+              class="play-button"
+              onclick="togglePlayPause('song3', this)"
+            >
+              Play
+            </button>
+            <audio id="song3" src="music/jaz.mp3"></audio>
+          </li>
+          <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+        </ul>
+      </section>
+      <div class="request-container">
+        <a
+          href="https://wa.me/qr/KHIRR4DYDRFPO1"
+          target="_blank"
+          class="whatsapp-button"
+        >
+          <i class="fab fa-whatsapp"></i> Request Lagu via WhatsApp
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p style="font-size: 10px">&copy; 2024 Web Cepzy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/lagu.js"></script>
+  </body>
+</html>
